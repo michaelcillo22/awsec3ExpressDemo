@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: CDK Synth
-      uses: scottbrenner/aws-cdk-action@master
+      uses: johntango/awsec3ExpressDemo
       with:
         args: synth
       env:
