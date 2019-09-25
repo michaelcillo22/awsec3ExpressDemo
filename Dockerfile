@@ -3,7 +3,6 @@ FROM node:8
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm tsc
 RUN npm run build
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
