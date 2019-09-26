@@ -1,5 +1,5 @@
 FROM node:8
-# Create app directory
+# Create app director
 COPY package*.json ./
 RUN npm install
 COPY . .
