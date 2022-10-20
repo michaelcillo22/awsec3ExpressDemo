@@ -7,6 +7,7 @@ export class Awsec3ExpressDockerStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    // virtual private cloud
     const vpc = new ec2.Vpc(this, "helloVpc", { maxAzs: 2 });
 
     // Create an ECS cluster

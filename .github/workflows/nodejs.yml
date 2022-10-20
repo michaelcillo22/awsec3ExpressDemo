@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - master
-
+# short but powerful github action
 jobs:
   build:
     runs-on: ubuntu-latest
